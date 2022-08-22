@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+
+
+#pokedex{
+    min-height: 50vh;
+    background-color: rgb(228, 95, 95);
+    color: white;
+}
+
+#pokedex h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.pokeImg{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.info-Container{
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -40px;
+    min-height: 50px;
+}
