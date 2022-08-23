@@ -17,7 +17,7 @@ async function loadPokemon(){
 function renderPokemonInfo(){
     document.getElementById('pokemonName').innerHTML = currentPokemon['name'];
     document.getElementById('pokeImg').src = currentPokemon['sprites']['front_default'];
-    document.getElementById('hp').innerHTML += currentPokemon['stats']['0']['stat']['name'];
+    document.getElementById('hp').innerHTML += currentPokemon['stats']['0']['stat']['name'] ;
     document.getElementById('number1').innerHTML += currentPokemon['stats']['0']['base_stat'];
     document.getElementById('attack').innerHTML += currentPokemon['stats']['1']['stat']['name'];
     document.getElementById('number2').innerHTML += currentPokemon['stats']['1']['base_stat']; 
@@ -29,11 +29,9 @@ function renderPokemonInfo(){
     document.getElementById('number5').innerHTML += currentPokemon['stats']['4']['base_stat'];
     document.getElementById('speed').innerHTML += currentPokemon['stats']['5']['stat']['name'] ;
     document.getElementById('number6').innerHTML += currentPokemon['stats']['5']['base_stat'];
-
-    
-    
-
-    
-
+ 
 }
 
+function showBar(){
+    document.getElementById('bar_1').style.width = currentPokemon['stats']['0']['base_stat']; 
+}
