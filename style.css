@@ -1,27 +1,27 @@
-body{
+body {
     margin: 0;
 }
 
 
-#pokedex{
+#pokedex {
     min-height: 50vh;
     background-color: rgb(228, 95, 95);
     color: white;
 }
 
-#pokedex h1{
+#pokedex h1 {
     display: flex;
     justify-content: center;
     margin-top: 0;
 }
 
-.pokeImg{
+.pokeImg {
     display: flex;
     justify-content: center;
     height: 200px;
 }
 
-.info-Container{
+.info-Container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,47 +32,56 @@ body{
     min-height: 50px;
 }
 
-.names{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin-right: 16px;
-margin-top: 10px;
+.moreInfo {
+    position: absolute;
+    top: 230px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
-.names b{
+.names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-top: 120px;
+}
+
+.names b {
     padding-bottom: 5px;
 }
 
-.numbers{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin-left: 16px;
-margin-top: 10px;
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-top: 120px;
 }
 
-.numbers b{
+.numbers b {
     padding-bottom: 5px;
 }
 
-.bar{
+.bar {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-left: 16px;
     width: 400px;
-    margin-top: 10px;
+    margin-top: 120px;
 }
 
-.progress{
+.progress {
     margin-bottom: 12.5px;
     width: 400px;
 }
 
-.progress-bar{
+.progress-bar {
     color: transparent !important;
 }
