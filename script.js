@@ -7,7 +7,7 @@ async function loadPokemon(i) {
   let responsAsJson = await response.json();
   allPokemon.push(await responsAsJson);
   showPokemons();
-  console.log(allPokemon);
+  // console.log(allPokemon);
 }
 
 async function init() {

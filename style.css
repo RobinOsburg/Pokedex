@@ -414,7 +414,7 @@ h1::first-letter {
 }
 
 
-@media(max-width:350px) {
+@media(max-width:360px) {
 
 
     .names b {
