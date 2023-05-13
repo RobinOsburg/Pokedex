@@ -11,10 +11,25 @@ async function loadPokemon(i) {
 }
 
 async function init() {
+  showLoader();
   for (let i = 1; i <= 30; i++) {
     await loadPokemon(i);
   }
+   hideLoader();
 }
+
+
+function showLoader() {
+  document.body.innerHTML += '<div class="loader"><img src="img/loadanimation.gif" alt="Loading..."></div>';
+}
+
+function hideLoader() {
+  const loader = document.querySelector('.loader');
+  if (loader) {
+    loader.remove();
+  }
+}
+
 
 function showPokemons() {
   document.getElementById('mainContainer').innerHTML ='';
@@ -96,11 +111,13 @@ function checkBackgroundcolor(i) {
 }
 
 async function loadMorePokemon() {
-  for (let i = start; i <= start + 19; i++) {
+  showLoader();
+  for (let i = start; i <= start + 19; i++) { 
     await loadPokemon(i);
   }
 
   start += 20;
+  hideLoader()
 }
 
 function searchPokemon() {
